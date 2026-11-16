@@ -1,0 +1,11 @@
+services:
+  lab2-app:
+    build:
+      context: .
+    image: devops-lab2-app:latest
+    container_name: lab2-app
+    environment:
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
